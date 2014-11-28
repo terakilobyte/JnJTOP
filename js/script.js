@@ -3,6 +3,7 @@ $(document).ready(function() {
   etch();
   resize();
   
+  // Discovered that when things are dynamically made, any interactions on them must be put inside callable functions!
   function etch() {
     $('.normalDiv').hover(function() {
       $(this).addClass('hoverDiv');
